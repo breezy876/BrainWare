@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29920.165
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ProjectDB", "ProjectDB\ProjectDB.sqlproj", "{58D1E657-AA21-497F-BA9C-634D6DA2D921}"
 EndProject
@@ -13,6 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{EDBA690C-AFAA-46CF-9E53-8A76F3BF2409}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{0B1BBD1C-6AAD-47F2-B242-4E6F278CE887}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +38,14 @@ Global
 		{6C10F27E-A278-4801-8AC7-929212274D85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C10F27E-A278-4801-8AC7-929212274D85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C10F27E-A278-4801-8AC7-929212274D85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDBA690C-AFAA-46CF-9E53-8A76F3BF2409}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDBA690C-AFAA-46CF-9E53-8A76F3BF2409}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDBA690C-AFAA-46CF-9E53-8A76F3BF2409}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDBA690C-AFAA-46CF-9E53-8A76F3BF2409}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B1BBD1C-6AAD-47F2-B242-4E6F278CE887}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B1BBD1C-6AAD-47F2-B242-4E6F278CE887}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B1BBD1C-6AAD-47F2-B242-4E6F278CE887}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B1BBD1C-6AAD-47F2-B242-4E6F278CE887}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

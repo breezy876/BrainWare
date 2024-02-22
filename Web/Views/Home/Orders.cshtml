@@ -1,0 +1,26 @@
+﻿@model Web.ViewModels.OrdersViewModel
+ 
+<div class="jumbotron">
+    <h1>BrainWare Orders</h1>
+    <p class="lead">This is the BrainWare orders page! Welcome</p>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h2>Your Orders</h2>
+        <div id="orders"></div>
+    </div>
+</div>
+
+<ul>
+    @foreach (var order in Model.Orders) {
+        <li>
+            @order.Description (Total: @order.Total)
+            <ul>
+                @foreach (var orderProduct in order.Products)
+                {
+                    <li>@orderProduct.Product.Name @(orderProduct.Quantity)x @(orderProduct.Product.Price)/ea)</li>
+                }
+            </ul>
+        </li>
+    }
+</ul>

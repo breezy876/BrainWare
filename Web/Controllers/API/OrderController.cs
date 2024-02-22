@@ -8,17 +8,26 @@ using System.Web.Http;
 namespace Web.Controllers
 {
     using System.Web.Mvc;
-    using Infrastructure;
-    using Models;
+    using Service.Models;
+    using Service;
 
     public class OrderController : ApiController
     {
-        [HttpGet]
-        public IEnumerable<Order> GetOrders(int id = 1)
-        {
-            var data = new OrderService();
 
-            return data.GetOrdersForCompany(id);
+        //this should ideally be injected with an IoC container
+        private readonly OrderService orderService;
+
+        public OrderController()
+        {
+            orderService = new OrderService();
         }
+
+        [HttpGet]
+        public IEnumerable<OrderDTO> GetOrders(int id = 1)
+        {
+            return (IEnumerable<OrderDTO>)orderService.GetOrdersForCompany(id);
+        }
+
+
     }
 }
