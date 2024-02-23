@@ -1,7 +1,5 @@
 ﻿using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Web;
-using Web.Controllers;
 
 namespace Tests.Controllers
 {
@@ -12,7 +10,7 @@ namespace Tests.Controllers
         public void Index()
         {
             // Arrange
-            HomeController controller = new HomeController();
+            Web.Controllers.HomeController controller = new Web.Controllers.HomeController();
 
             // Act
             ViewResult result = controller.Index() as ViewResult;
